@@ -1,12 +1,9 @@
-Dado('que loguei') do
-  visit ''
-  sleep 5
+Quando('acesso a url') do
+  visit'/'
+  sleep (5)
 end
 
-Quando('eu logar') do
-
-end
-
-Entao('logaremos') do
-
+Entao('eu verifico se estou logado') do
+  expect(page).to have_current_path('https://trespontas-mg-tst.crescer.net/login', url: true)
+  sleep (5)
 end

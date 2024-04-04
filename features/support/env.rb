@@ -4,10 +4,11 @@ require 'capybara/rspec'
 require 'site_prism'
 require 'rspec'
 require 'rspec/expectations'
+require 'selenium-webdriver'
 
 
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
-  config.app_host = 'https://www.novaserrana-mg.crescer.net'
-  config.default_max_wait_time = 5
+  config.app_host = 'https://trespontas-mg-tst.crescer.net'
+  config.default_max_wait_time = 10
  end

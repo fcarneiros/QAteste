@@ -1,8 +1,9 @@
 #language: pt
 
-Funcionalidade: Login com sucesso
+@acessando_url
+Funcionalidade: Acessar a url
 
-Cenario: Login com sucesso
-Dado que loguei
-Quando eu logar
-Entao logaremos
+Cenario: Acessar a url com sucesso.
+Quando acesso a url
+Entao eu verifico se estou logado
+
