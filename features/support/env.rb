@@ -5,6 +5,7 @@ require 'site_prism'
 require 'rspec'
 require 'rspec/expectations'
 require 'selenium-webdriver'
+require 'capybara/dsl'
 
 
 Capybara.configure do |config|

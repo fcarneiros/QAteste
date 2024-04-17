@@ -4,8 +4,10 @@ end
 
 Entao('verifico se encontrei o elemento') do
 
-  page.all(:css, 'form-control')
-  #find ('#password')
-  find_by_id('password')
-  find_button(class: 'btn_entrar')
+  #page.all(:css, 'btn_entrar')
+  #click_button(class: 'btn btn_entrar')
+  #find(class: 'btn btn-lg btn-primary btn-block hide').click
+  find('div[class="btn btn-lg btn-primary btn-block btn_entrar"]').click
+  sleep(5)
+
 end
