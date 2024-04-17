@@ -8,6 +8,9 @@ require 'selenium-webdriver'
 require 'capybara/dsl'
 
 
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
+
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
   config.app_host = 'https://trespontas-mg-tst.crescer.net'

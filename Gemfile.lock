@@ -51,6 +51,8 @@ GEM
       rack (>= 1.3)
     regexp_parser (2.8.3)
     rexml (3.2.6)
+    robocop (0.1.1)
+      rack
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
       rspec-expectations (~> 3.12.0)
@@ -90,6 +92,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
+  robocop
   rspec
   selenium-webdriver
   site_prism
